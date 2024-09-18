@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Comment</title>
+</head>
+
+<body>
+    <h1>please add your comment</h1>
+    <div id="comment-container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim impedit voluptas nostrum labore illo.
+            Blanditiis voluptate accusantium possimus voluptatum minima? Praesentium et, aspernatur quasi fugiat
+            dignissimos ad esse sint neque, corporis consequuntur, labore pariatur sit minus eligendi. Corrupti, porro
+            architecto eos modi voluptatibus consequuntur ducimus ab asperiores vel praesentium perferendis?</p>
+        <p>Recusandae odio modi consequatur voluptatum assumenda odit ab aliquam pariatur dicta in! Sit, dolor minus!
+            Distinctio soluta beatae ipsum vero dolorem maxime a, dignissimos autem hic laboriosam voluptatum magnam
+            obcaecati vel veniam, dolore delectus illum porro, magni aut neque. Minus ab dolorem quibusdam pariatur
+            veniam eveniet repellat in dolorum molestiae.</p>
+        <p>Eligendi velit ducimus exercitationem fuga! Doloremque eius reprehenderit neque provident nemo ex eligendi
+            aliquam cupiditate distinctio, ratione repellendus tenetur fugit dolore velit excepturi ullam possimus
+            maxime quae accusantium minima! Enim quia porro accusamus libero suscipit id provident. Recusandae, aut
+            amet, enim ad adipisci optio fugit quae, quos commodi nesciunt exercitationem.</p>
+    </div>
+
+    <div>
+        <textarea name="" id="new-cmmnt" cols="30" rows="5"></textarea>
+        <br>
+        <button id="btn-post">post</button>
+    </div>
+
+    <script>
+        // step-01 do or done
+        document.getElementById('btn-post').addEventListener('click', function () {
+            // get the cmmnt step-02
+
+            let cmmntBox = document.getElementById('new-cmmnt');
+            let newComment = cmmntBox.value;
+            // console.log(newComment)
+
+            // step-03
+            let commentContainer = document.getElementById('comment-container');
+            let p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p)
+            cmmntBox.value = '';
+        })
+
+    </script>
+</body>
+
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recap cmmnt</title>
+</head>
+<body>
+
+    <h1>Add a New Comment</h1>
+    <div id="comment-container">
+        <p>এখানে আপনার মতামত প্রকাস করন</p>
+    </div>
+    <div>
+        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn">click and send the comment</button>
+    </div>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            let commentBox = document.getElementById('comment');
+            let newComment = commentBox.value;
+            let commentContainer = document.getElementById('comment-container');
+            let p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+            commentBox.value=''; 
+
+
+        })
+
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="comment-container">
+        <p>এখানে আপনার মতামত প্রকাস করন</p>
+    </div>
+    <div>
+        <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        <br>
+        <button id="btn">click me and see comment</button>
+    </div>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            let comment = document.getElementById('comment');
+            let newComment = comment.value;
+            let container = document.getElementById('comment-container');
+            let p = document.createElement('p');
+            p.innerText = newComment;
+            container.appendChild(p);
+            comment.value = '';
+            
+        })
+    </script>
+</body>
+</html>

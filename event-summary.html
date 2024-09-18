@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js dom summary</title>
+</head>
+
+<body>
+    <h1>finall dom event handlar</h1>
+    <h3 id="handlar-status">default text</h3>
+    <h4 id="handlar-checked">arekta check korar jonno</h4>
+    <br>
+    <p id="input-text-display">input text</p>
+    <input id="input-field" type="text">
+    <button id="btn-update">update koron akane</button>
+    <br>
+
+    <button onclick="handleOnClick()">hanfle events by add onclick function </button>
+    <button id="event-listener">Handle events by addevenlistener</button>
+    <button id="even-listen">dekhi aiber hoi kina</button>
+
+    <script>
+        function handleOnClick() {
+            let handlarStatus = document.getElementById('handlar-status')
+            handlarStatus.innerText = 'Handled by function attached on onclick atribute   '
+
+        }
+
+        // option-2
+        document.getElementById('event-listener').addEventListener('click', function () {
+            let handlarStatus = document.getElementById('handlar-status');
+            handlarStatus.innerText = 'text apdated by add listener button'
+        })
+
+        // option-3
+        document.getElementById('even-listen').addEventListener('click', function () {
+            let handlarCheck = document.getElementById('handlar-checked');
+            handlarCheck.innerText = 'text abr update kora holo'
+
+        })
+
+
+        // recap
+        // document.getElementById('btn-update').addEventListener('click', function(){
+        //  let inputField = document.getElementById('input-field');
+        // let inputText = inputField.value
+        // let p = document.getElementById('input-text-display');
+        // p.innerText=inputText
+
+        // })
+
+        document.getElementById('btn-update').addEventListener('click', function () {
+            let inputField = document.getElementById('input-field');
+            let inputText = inputField.value;
+            let p = document.getElementById('input-text-display');
+            p.innerText = inputText;
+            inputField.value = '';
+        })
+    </script>
+</body>
+
+</html>
